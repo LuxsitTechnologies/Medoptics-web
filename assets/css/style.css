@@ -1,0 +1,418 @@
+body{
+  font-family: 'lato';
+  font-size: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #858585 !important;
+}
+.navbar-brand {
+  margin-left: 90px;
+}
+.dropdown-toggle::after {
+  color: #fff;
+}
+.navbar-nav .nav-link strong {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover strong {
+  color: #90c5f4;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-item {
+  color: #333; 
+}
+
+.dropdown-item:hover {
+  background-color: rgba(144, 197, 244, 0.2);
+  color: #333; 
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+/* vertical line section */
+  .container {
+    max-width: 1250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+.vertical-lines-section {
+    min-height: 200px;
+    background-color: #A1A2A3;
+    color: #e5e5e5;
+}
+
+.vertical-lines-section .col {
+    position: relative;
+    padding: 10px;
+    border-left: 2px dotted #90c5f4; 
+    text-align: justify; 
+}
+
+.vertical-lines-section .col:first-child {
+    border-left: none;
+}
+
+.field {
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+}
+b, strong {
+  font-weight: bolder;
+  color: #90c5F4;
+}
+
+.vertical-lines-section {
+    min-height: 200px;
+}
+
+
+/* Centered Section Styling */
+.centered-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+    text-align: center; 
+    margin-bottom:-60px;
+    /* margin-top: 100px; */
+  }
+  
+  .content {
+    max-width: 1015px; 
+  }
+  
+  h1 {
+    font-size: 44px; 
+    margin-bottom: 20px; 
+    color: #90c5F4;
+    display: inline-block;
+  }
+  
+  .our-mission-text {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+    text-transform: none;
+    text-align: justify;
+}
+/* horizantal line section */
+.small-line {
+  border: none;
+  border-top: 3px solid #90c5f4;
+  width: 520px; 
+  margin: 20px auto; 
+}
+/* our vision section */
+.our-vision {
+  line-height: 1.39em;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  text-align: justify;
+  margin-left: -80px;
+  margin-right: 108px;
+}
+.image-text-section img {
+  width: 75%; 
+  max-width: 400px; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+.our-vision-heading{
+  margin-left: -80px;
+  color: #90c5F4;
+}
+
+.btn-primary{
+  margin-left: -80px;
+}
+
+/* our product section */
+.our-product {
+  margin-top: 100px;
+  /* margin-left: 60px; */
+}
+.our-product-text {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  text-transform: none;
+  /* margin-left: 60px; */
+  margin-bottom: 50px;
+}
+
+/* our product images section */
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.gallery-img {
+  transition: transform 0.3s ease; 
+  width: 100%; 
+}
+
+.image-container:hover .gallery-img {
+  transform: scale(1.1); 
+}
+
+
+/* customer review section */
+
+.slideshow-container {
+  position: relative;
+  background: #A1A2A3;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #A1A2A3;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #90c5f4;
+}
+
+/* Add an italic font style to all quotes */
+q { 
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+  /* margin-top: 1000px; */
+}
+
+/* Add a blue color to the author */
+.author { color: #90c5f4; }
+
+
+
+/* distributor section */
+.logo-section {
+  padding: 50px 0;
+}
+.logo-section img {
+  width: 250px; 
+  height: 88px; 
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.justify-content-center {
+  justify-content: center !important;
+  margin-top: 100px;
+}
+
+
+
+  /* Dark background for the entire section */
+.dark-section {
+    background-color: #A1A2A3; 
+    color: #fff; 
+    padding: 50px 0;
+    margin-top: -30px;
+  }
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 350px;
+}
+  
+  .dark-section .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .dark-section .col-lg-3 {
+    flex: 1;
+    padding: 0 20px; 
+  }
+  
+  /* Styling the links */
+  .dark-section .links ul, 
+  .dark-section .distribution ul, 
+  .dark-section .head-office ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .dark-section .links ul li a,
+  .dark-section .distribution ul li a {
+    color: #fff; 
+    text-decoration: none;
+  }
+  
+  .dark-section .links ul li a:hover,
+  .dark-section .distribution ul li a:hover {
+    color: #90c5f4; /* Hover color */
+  }
+  
+  .dark-section b {
+    color: #90c5f4; /* Bold section titles */
+  }
+  
+  .dark-section p {
+    color: #e5e5e5; /* Slightly lighter gray for the paragraph text */
+  }
+  
+  /* Image logo styling */
+  .dark-section .logo img {
+    max-width: 100px; /* Adjust the size of the logo */
+    margin-bottom: 10px;
+  }
+
+
+  /* footer line */
+  .align-items-center {
+    align-items: center !important;
+    /* margin-top: -52px; */
+}
+  .footer-section {
+    background-color: #A1A2A3; 
+    padding: 10px 0;
+    color: #e5e5e5; 
+    margin-top: -160px;
+}
+
+.footer-section .footer-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons .btn {
+    border-color: #90c5f4; 
+    color: #90c5f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons .btn:hover {
+    background-color: #90c5f4; 
+    color: #A1A2A3; 
+}
+
+
+/* About us page page */
+/* .about-us {
+  margin-top: 50px;
+} */
+.about-us-text {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  /* font-size: 28px; */
+  text-transform: none;
+  /* margin-left: 60px; */
+  /* margin-bottom: 50px; */
+}
+h4{
+  color: #90c5f4;
+}
+
+
+/* our CEO page */
+.our-ceo {
+  line-height: 1.39em;
+  position: relative;
+  margin-top: -65px;
+  text-align: justify;
+  margin-left: -130px;
+  margin-right: 50px;
+}
+.our-ceo-heading{
+  text-align: center;
+  color: #90c5F4;
+}
+.our-ceo-section img {
+  width: 75%; 
+  max-width: 425px; 
+  display: block;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+/* management-page */
+.hover-image {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.image-block {
+  width: calc(33.33% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.image-block img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-block img:hover {
+  transform: scale(1.1);
+}
+
+.image-block h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #90c5f4;
+}
