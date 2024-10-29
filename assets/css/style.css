@@ -182,65 +182,13 @@ b, strong {
 }
 
 .gallery-img {
-  transition: transform 0.3s ease; 
+  transition: transform 0.5s ease-in-out; 
   width: 100%; 
 }
 
 .image-container:hover .gallery-img {
-  transform: scale(1.1); 
+  transform: scale(1.5); 
 }
-
-
-/* customer review section */
-
-.slideshow-container {
-  position: relative;
-  background: #A1A2A3;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  background: #A1A2A3;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #90c5f4;
-}
-
-/* Add an italic font style to all quotes */
-q { 
-  font-style: italic;
-  color: white;
-  font-size: 20px;
-  /* margin-top: 1000px; */
-}
-
-/* Add a blue color to the author */
-.author { color: #90c5f4; }
-
-
 
 /* distributor section */
 .logo-section {
@@ -298,20 +246,20 @@ q {
   
   .dark-section .links ul li a:hover,
   .dark-section .distribution ul li a:hover {
-    color: #90c5f4; /* Hover color */
+    color: #90c5f4; 
   }
   
   .dark-section b {
-    color: #90c5f4; /* Bold section titles */
+    color: #90c5f4;
   }
   
   .dark-section p {
-    color: #e5e5e5; /* Slightly lighter gray for the paragraph text */
+    color: #e5e5e5;
   }
   
-  /* Image logo styling */
+
   .dark-section .logo img {
-    max-width: 100px; /* Adjust the size of the logo */
+    max-width: 100px; 
     margin-bottom: 10px;
   }
 
@@ -331,12 +279,14 @@ q {
 .footer-section .footer-text p {
     margin: 0;
     font-size: 14px;
+    margin-top: 90px;
 }
 
 .social-icons .btn {
     border-color: #90c5f4; 
     color: #90c5f4;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 90px;
 }
 
 .social-icons .btn:hover {
@@ -346,45 +296,33 @@ q {
 
 
 /* About us page page */
-/* .about-us {
-  margin-top: 50px;
-} */
-.about-us-text {
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-style: normal;
-  /* font-size: 28px; */
-  text-transform: none;
-  /* margin-left: 60px; */
-  /* margin-bottom: 50px; */
+.ceo-section{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom:-60px;
+  margin-top: 100px;
 }
+
 h4{
   color: #90c5f4;
 }
 
 
-/* our CEO page */
-.our-ceo {
-  line-height: 1.39em;
-  position: relative;
-  margin-top: -65px;
-  text-align: justify;
-  margin-left: -130px;
-  margin-right: 50px;
-}
-.our-ceo-heading{
-  text-align: center;
-  color: #90c5F4;
-}
-.our-ceo-section img {
-  width: 75%; 
-  max-width: 425px; 
-  display: block;
-  margin-top: 100px;
-  margin-left: 30px;
-}
-
 /* management-page */
+.management{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom:-60px;
+  /* margin-top: 100px; */
+}
 .hover-image {
   display: flex;
   flex-wrap: wrap;
@@ -415,4 +353,27 @@ h4{
   margin-top: 10px;
   font-size: 18px;
   color: #90c5f4;
+}
+
+/* our team */
+.our-team{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom:-60px;
+  /* margin-top: 100px; */
+}
+/* distributors page */
+.distributors{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom:-60px;
+  /* margin-top: 100px; */
 }
