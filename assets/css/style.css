@@ -4,27 +4,58 @@ body{
 }
 
 /* Navbar Styling */
+
+.video-background-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 .navbar {
   background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease;
+  height: 60px; /* Set a fixed height for the navbar */
+  width: 100%; /* Ensures navbar spans the entire width */
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Limits the logo height to keep it within the navbar */
+  max-width: auto; /* Adjusts width proportionally to height */
 }
 
 .navbar.scrolled {
-  background-color: #858585 !important;
+  background-color: #F0F0F0 !important;
 }
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-nav .nav-link strong,
+.navbar.scrolled .dropdown-toggle::after {
+  color: #000 !important; /* Set text color to black */
+}
+
+
 .navbar-brand {
   margin-left: 90px;
 }
+
 .dropdown-toggle::after {
   color: #fff;
 }
+
 .navbar-nav .nav-link strong {
   color: #fff;
   transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover strong {
-  color: #90c5f4;
+  color: #002366;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
@@ -37,7 +68,7 @@ body{
   background-color: rgba(255, 255, 255, 0.9); 
   border: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-}
+} 
 
 .dropdown-item {
   color: #333; 
@@ -64,14 +95,14 @@ body{
 
 .vertical-lines-section {
     min-height: 200px;
-    background-color: #A1A2A3;
+    background-color: #f8f9fa;
     color: #e5e5e5;
 }
 
 .vertical-lines-section .col {
     position: relative;
     padding: 10px;
-    border-left: 2px dotted #90c5f4; 
+    border-left: 2px dotted #002366; 
     text-align: justify; 
 }
 
@@ -87,7 +118,7 @@ body{
 }
 b, strong {
   font-weight: bolder;
-  color: #90c5F4;
+  color: #002366;
 }
 
 .vertical-lines-section {
@@ -96,6 +127,7 @@ b, strong {
 
 
 /* Centered Section Styling */
+
 .centered-section {
     display: flex;
     justify-content: center; 
@@ -104,17 +136,18 @@ b, strong {
     padding: 20px;
     text-align: center; 
     margin-bottom:-60px;
-    /* margin-top: 100px; */
+    margin-top: 100px;
   }
   
   .content {
-    max-width: 1015px; 
+    max-width: 1015px;
+    margin-bottom: 300px;
   }
   
   h1 {
     font-size: 44px; 
     margin-bottom: 20px; 
-    color: #90c5F4;
+    color: #002366;
     display: inline-block;
   }
   
@@ -125,15 +158,23 @@ b, strong {
     font-size: 28px;
     text-transform: none;
     text-align: justify;
+    margin-bottom: -20px;
 }
 /* horizantal line section */
 .small-line {
   border: none;
-  border-top: 3px solid #90c5f4;
+  border-top: 3px solid #002366;
   width: 520px; 
   margin: 20px auto; 
+  margin-top: 26px;
+  margin-bottom: 400px;
 }
 /* our vision section */
+.image-text-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  margin-top: -300px;
+}
 .our-vision {
   line-height: 1.39em;
   position: relative;
@@ -152,7 +193,7 @@ b, strong {
 }
 .our-vision-heading{
   margin-left: -80px;
-  color: #90c5F4;
+  color: #002366;
 }
 
 .btn-primary{
@@ -208,29 +249,42 @@ b, strong {
 
 
   /* Dark background for the entire section */
-.dark-section {
-    background-color: #A1A2A3; 
-    color: #fff; 
+  .dark-section {
+    background-color: #f8f9fa; 
+    color: black; 
     padding: 50px 0;
     margin-top: -30px;
   }
+  
   .lead {
     font-size: 1.25rem;
     font-weight: 300;
     max-width: 350px;
-}
+    margin: 0 auto;
+  }
   
   .dark-section .row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
   
   .dark-section .col-lg-3 {
     flex: 1;
-    padding: 0 20px; 
+    padding: 20px;
+    box-sizing: border-box;
   }
   
-  /* Styling the links */
+  /* Bold the section headings */
+  .dark-section .links h3,
+  .dark-section .distribution h3,
+  .dark-section .head-office h3 {
+    font-weight: bold;
+    color: #002366; /* Optional: color to match the style */
+  }
+  
+  /* Styling the lists */
   .dark-section .links ul, 
   .dark-section .distribution ul, 
   .dark-section .head-office ul {
@@ -240,28 +294,29 @@ b, strong {
   
   .dark-section .links ul li a,
   .dark-section .distribution ul li a {
-    color: #fff; 
+    color: black; 
     text-decoration: none;
   }
   
   .dark-section .links ul li a:hover,
   .dark-section .distribution ul li a:hover {
-    color: #90c5f4; 
+    color: #002366; 
   }
   
   .dark-section b {
-    color: #90c5f4;
+    color: #002366;
   }
   
   .dark-section p {
-    color: #e5e5e5;
+    color: black;
   }
   
-
   .dark-section .logo img {
     max-width: 100px; 
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+    display: block;
   }
+  
 
 
   /* footer line */
@@ -270,9 +325,9 @@ b, strong {
     /* margin-top: -52px; */
 }
   .footer-section {
-    background-color: #A1A2A3; 
+    background-color: #f8f9fa; 
     padding: 10px 0;
-    color: #e5e5e5; 
+    color: black; 
     margin-top: -160px;
 }
 
@@ -283,19 +338,20 @@ b, strong {
 }
 
 .social-icons .btn {
-    border-color: #90c5f4; 
-    color: #90c5f4;
+    border-color: #002366; 
+    color: #002366;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 90px;
 }
 
 .social-icons .btn:hover {
-    background-color: #90c5f4; 
-    color: #A1A2A3; 
+    background-color: #002366; 
+    color: #f8f9fa; 
 }
 
 
 /* About us page page */
+
 .ceo-section{
   display: flex;
   justify-content: center; 
@@ -304,13 +360,18 @@ b, strong {
   padding: 20px;
   text-align: center; 
   margin-bottom:-60px;
-  margin-top: 100px;
+  margin-top: 200px;
+  /* background-color: #f8f9fa; */
+}
+
+.our-ceo-text{
+  text-align: justify;
+  margin-top: 20px;
 }
 
 h4{
-  color: #90c5f4;
+  color: #002366;
 }
-
 
 /* management-page */
 .management{
@@ -352,7 +413,7 @@ h4{
 .image-block h2 {
   margin-top: 10px;
   font-size: 18px;
-  color: #90c5f4;
+  color: #002366;
 }
 
 /* our team */
@@ -377,3 +438,78 @@ h4{
   margin-bottom:-60px;
   /* margin-top: 100px; */
 }
+.text-center {
+  text-align: center !important;
+  margin-top: 20px;
+}
+  body { font-family: 'Lato', sans-serif; }
+  h1, h2 { color: #002366; font-weight: bold; }
+  p { color: #333; font-weight: 300; line-height: 1.6; }
+  .btn-primary { background-color: #002366; border: none; transition: background-color 0.3s ease; }
+  .btn-primary:hover { background-color: #001844; }
+  .vertical-lines-section .col { border-right: 1px solid #ccc; }
+  .vertical-lines-section .col:last-child { border-right: none; }
+  .social-icons a { color: #002366; transition: color 0.3s ease; }
+  .social-icons a:hover { color: #001844; }
+  .gallery-img { border-radius: 8px; transition: transform 0.3s ease; }
+  .gallery-img:hover { transform: scale(1.05); }
+  .centered-section { text-align: center; margin: 50px 0; }
+  .small-line { border-top: 2px solid #002366; width: 50px; margin: 20px auto; }
+  .our-product { text-align: center; margin: 50px 0; }
+  .image-text-section { background-color: #f8f9fa; padding: 50px 0; }
+  .our-vision-heading { color: #002366; }
+  /* .product-reviews { background-color: #f8f9fa; padding: 50px 0; } */
+  .review-card { padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 10px; }
+
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #002366;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: -80px;
+  }
+  
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.05); /* Zoom effect */
+    background-color: #e0f7fa; /* Change color on hover */
+  }
+  
+  .review-card p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .review-card strong {
+    color: #002366; /* Text color for author name */
+  }
+  
+  .review-card:hover p,
+  .review-card:hover strong {
+    color: #004d40; /* Darker text color on hover */
+  }
+  
